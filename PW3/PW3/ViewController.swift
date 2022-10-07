@@ -95,6 +95,7 @@ class ViewController: UIViewController {
             /*colorPaletteView.bottomAnchor.constraint(equalTo:
              buttonsSV.topAnchor, constant: -8)*/
         ])
+        colorPaletteView.addTarget(self, action: #selector(changeColor), for: .touchDragInside)
     }
     
     private func setupCommentView(){
